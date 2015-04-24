@@ -10,7 +10,7 @@ bool isPrime(int i) {
   if (i == 2) {
     return false;
   }
-  for (int n = 3; n < sqrt(i).round(); n += 2) {
+  for (int n=3; n < sqrt(i).round(); n += 2) {
     if (i % n == 0) {
       return false;
     }
